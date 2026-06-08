@@ -1,42 +1,73 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f0f12;
+  font-family: system-ui, Arial, sans-serif;
+  background: #0b0f19;
   color: white;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
-  background: #18181d;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(20, 20, 30, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
 }
 
 .navbar a {
-  color: white;
-  margin-left: 15px;
+  color: #cfd3ff;
+  margin-left: 18px;
   text-decoration: none;
+  transition: 0.2s;
 }
 
-.logo {
-  font-weight: bold;
+.navbar a:hover {
+  color: white;
 }
 
+/* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #5865F2, transparent 60%);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.8;
+  font-size: 18px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 12px 24px;
   background: #5865F2;
   color: white;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 6px;
+  transition: 0.2s;
 }
 
-.page {
-  padding: 40px;
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* CARDS / SECTIONS */
+.page, .preview {
+  padding: 60px;
+  max-width: 900px;
+  margin: auto;
+}
+
+ul li {
+  margin: 10px 0;
+  opacity: 0.9;
 }
