@@ -1,116 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Discord Link Protector</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<meta charset="UTF-8">
+<title>DLP - Discord Link Protector</title>
 
-    header {
-      padding: 20px;
-      background: #111827;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
+body {
+  background: #0b1220;
+  color: white;
+  display: flex;
+}
 
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #0f172a;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
 
-    nav a:hover {
-      color: #60a5fa;
-    }
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
+.sidebar a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
 
-    .hero h1 {
-      font-size: 40px;
-    }
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+}
 
-    .btn {
-      padding: 12px 20px;
-      background: #3b82f6;
-      border: none;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-      display: inline-block;
-    }
+/* MAIN CONTENT */
+.main {
+  margin-left: 240px;
+  padding: 40px;
+  width: 100%;
+}
 
-    .btn:hover {
-      background: #2563eb;
-    }
+/* HERO */
+.hero {
+  margin-bottom: 40px;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111827;
-      margin-top: 40px;
-    }
-  </style>
+.hero p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* CARDS */
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #1f2937;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #9ca3af;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-  <div class="logo">Discord Link Protector</div>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#docs">Docs</a>
-    <a href="#support">Support</a>
-  </nav>
-</header>
-
-<div class="hero">
-  <h1>Protect Your Discord Server</h1>
-  <p>Stop malicious links, scams, and spam instantly.</p>
-
-  <a class="btn" href="#features">Get Started</a>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>DLP</h2>
+  <a href="#dashboard">🏠 Dashboard</a>
+  <a href="#features">⚡ Features</a>
+  <a href="#docs">📘 How It Works</a>
+  <a href="#support">💬 Support</a>
 </div>
 
-<section id="features">
-  <h2>Features</h2>
-  <p>✔ Anti-scam protection</p>
-  <p>✔ Auto moderation</p>
-  <p>✔ Custom filters</p>
-</section>
+<!-- MAIN -->
+<div class="main">
 
-<section id="docs">
-  <h2>How it works</h2>
-  <p>Invite the bot → Set permissions → Enable protection</p>
-</section>
+  <div class="hero">
+    <h1>Stop Malicious Discord Links Instantly</h1>
+    <p>Detect phishing, scams, and unsafe redirects in real time.</p>
+    <a class="btn" href="#features">Get Started</a>
+  </div>
 
-<section id="support">
-  <h2>Support</h2>
-  <p>Join our Discord or contact support.</p>
-</section>
+  <div id="features">
+    <div class="card">
+      <h3>🔍 Real-Time Scanning</h3>
+      <p>Detects suspicious links before users click them.</p>
+    </div>
 
-<footer>
-  © 2026 Discord Link Protector
-</footer>
+    <div class="card">
+      <h3>🛡 Anti-Phishing</h3>
+      <p>Blocks fake login pages and scam redirects automatically.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚙ Easy Setup</h3>
+      <p>Works with Discord bots in minutes.</p>
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>
