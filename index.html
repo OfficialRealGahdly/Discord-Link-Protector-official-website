@@ -1,71 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Discord Link Protector</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: white;
+}
 
-<body>
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #161a22;
+}
 
-<div class="layout">
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="brand">🔐 DLP</div>
+nav a:hover {
+    color: #4ea1ff;
+}
 
-    <nav>
-      <a class="active" href="index.html">🏠 Home</a>
-      <a href="features.html">⚡ Features</a>
-      <a href="docs.html">📘 How It Works</a>
-      <a href="support.html">🆘 Support</a>
-    </nav>
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
 
-    <div class="sidebar-footer">
-      <p>Discord Link Protector</p>
-    </div>
-  </aside>
+.hero h1 {
+    font-size: 40px;
+}
 
-  <!-- MAIN -->
-  <main class="main">
+.hero p {
+    color: #b5b5b5;
+    max-width: 600px;
+    margin: 10px auto;
+}
 
-    <section class="hero">
-      <div class="badge">Secure • Fast • Lightweight</div>
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #4ea1ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-      <h1>Stop Malicious Discord Links Instantly</h1>
-
-      <p>
-        Discord Link Protector scans links in real time and protects you from phishing,
-        scams, and unsafe redirects.
-      </p>
-
-      <div class="buttons">
-        <a class="btn primary" href="features.html">Explore Features</a>
-        <a class="btn secondary" href="docs.html">How it Works</a>
-      </div>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <h3>🛡 Protection</h3>
-        <p>Blocks dangerous links before you open them.</p>
-      </div>
-
-      <div class="card">
-        <h3>⚡ Fast</h3>
-        <p>Runs silently with zero lag or delay.</p>
-      </div>
-
-      <div class="card">
-        <h3>🔍 Smart Detection</h3>
-        <p>Detects phishing patterns and scam redirects.</p>
-      </div>
-    </section>
-
-  </main>
-
-</div>
-
-</body>
-</html>
+.btn:hover {
+    background: #2f8cff;
+}
