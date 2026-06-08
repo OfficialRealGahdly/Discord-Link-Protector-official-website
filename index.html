@@ -2,102 +2,143 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DLP - Discord Link Protector</title>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: #0b1220;
+  background: radial-gradient(circle at top, #0f172a, #050814);
   color: white;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
 }
 
-/* SIDEBAR */
-.sidebar {
-  width: 240px;
-  height: 100vh;
-  background: #0f172a;
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  top: 0;
+.logo {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.sidebar h2 {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.sidebar a {
-  display: block;
+.nav-links a {
   color: #cbd5e1;
+  margin-left: 20px;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 8px;
+  font-size: 14px;
 }
 
-.sidebar a:hover {
-  background: #1e293b;
+.nav-links a:hover {
   color: white;
-}
-
-/* MAIN CONTENT */
-.main {
-  margin-left: 240px;
-  padding: 40px;
-  width: 100%;
 }
 
 /* HERO */
 .hero {
-  margin-bottom: 40px;
+  text-align: center;
+  padding: 120px 20px 80px;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 54px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
+  margin-top: 20px;
   color: #94a3b8;
-  margin-bottom: 20px;
+  font-size: 18px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* BUTTONS */
 .btn {
-  background: #3b82f6;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 10px;
-  text-decoration: none;
   display: inline-block;
+  margin-top: 30px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #2563eb;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
-/* CARDS */
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 20px 30px;
+  border-radius: 16px;
+  text-align: center;
+  min-width: 160px;
+}
+
+.stat h2 {
+  font-size: 26px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 80px 60px;
+}
+
 .card {
-  background: #111827;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #1f2937;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.08);
 }
 
 .card h3 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.card p {
-  color: #9ca3af;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+  font-size: 14px;
 }
 </style>
 
@@ -105,42 +146,66 @@ body {
 
 <body>
 
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <h2>DLP</h2>
-  <a href="#dashboard">🏠 Dashboard</a>
-  <a href="#features">⚡ Features</a>
-  <a href="#docs">📘 How It Works</a>
-  <a href="#support">💬 Support</a>
-</div>
-
-<!-- MAIN -->
-<div class="main">
-
-  <div class="hero">
-    <h1>Stop Malicious Discord Links Instantly</h1>
-    <p>Detect phishing, scams, and unsafe redirects in real time.</p>
-    <a class="btn" href="#features">Get Started</a>
+<nav>
+  <div class="logo">DLP</div>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#stats">Stats</a>
+    <a href="#support">Support</a>
   </div>
+</nav>
 
-  <div id="features">
-    <div class="card">
-      <h3>🔍 Real-Time Scanning</h3>
-      <p>Detects suspicious links before users click them.</p>
+<div class="hero">
+  <h1>Stop Discord Scam Links Instantly</h1>
+  <p>Advanced real-time protection for Discord servers against phishing, malware links, and scam redirects.</p>
+
+  <a class="btn" href="#features">Get Started</a>
+
+  <div class="stats" id="stats">
+    <div class="stat">
+      <h2>99.9%</h2>
+      <p>Detection Rate</p>
     </div>
 
-    <div class="card">
-      <h3>🛡 Anti-Phishing</h3>
-      <p>Blocks fake login pages and scam redirects automatically.</p>
+    <div class="stat">
+      <h2>&lt;1s</h2>
+      <p>Scan Time</p>
     </div>
 
-    <div class="card">
-      <h3>⚙ Easy Setup</h3>
-      <p>Works with Discord bots in minutes.</p>
+    <div class="stat">
+      <h2>24/7</h2>
+      <p>Protection</p>
     </div>
   </div>
+</div>
+
+<div class="features" id="features">
+
+  <div class="card">
+    <h3>🛡 AI Link Detection</h3>
+    <p>Automatically detects suspicious and malicious URLs in real time.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚡ Instant Blocking</h3>
+    <p>Stops scam links before users can interact with them.</p>
+  </div>
+
+  <div class="card">
+    <h3>🔒 Anti-Phishing Engine</h3>
+    <p>Protects users from fake login pages and credential theft.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚙ Easy Discord Setup</h3>
+    <p>Invite the bot and configure protection in under 2 minutes.</p>
+  </div>
 
 </div>
+
+<footer>
+  © 2026 Discord Link Protector • Built for security
+</footer>
 
 </body>
 </html>
