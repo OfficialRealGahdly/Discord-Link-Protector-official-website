@@ -1,47 +1,20 @@
-# 🔐 Discord Link Protector
+# Discord Link Protector — Official Website
 
-A lightweight browser extension designed to help protect users from unsafe, suspicious, or malicious Discord invite links.
+Welcome to the official website for Discord Link Protector.
 
-## ✨ Features
+This site provides information, updates, and resources related to the Discord Link Protector browser extension.
 
-- 🛡️ Detects and blocks risky Discord invite links  
-- ⚡ Fast real-time link scanning  
-- 🔍 Helps identify suspicious or unknown servers  
-- 🎯 Simple one-click protection system  
-- 🧩 Runs silently in the background  
+## About the Project
+Discord Link Protector is a browser extension designed to help improve safety by detecting and warning users about suspicious or potentially harmful links shared on Discord.
 
-## 📦 Installation
+## What This Site Is For
+- Official information about the extension  
+- Feature explanations and updates  
+- Support and project links  
+- Download or installation guidance (when available)
 
-1. Download or clone this repository  
-2. Open your browser and go to: `chrome://extensions/`  
-3. Enable **Developer Mode** (top right corner)  
-4. Click **Load unpacked**  
-5. Select the extension folder  
+## Important Note
+This website is not the extension itself. The extension must be installed separately in your browser.
 
-## ⚙️ How It Works
-
-Discord Link Protector scans links before or while you interact with them. If a link looks unsafe, unknown, or matches suspicious patterns, the extension can warn or block it to help keep you safe while browsing.
-
-## 🔒 Privacy & Security
-
-- No personal data is collected  
-- No browsing history is tracked  
-- Everything runs locally in your browser  
-- No external servers required  
-
-## 🛠️ Built With
-
-- JavaScript  
-- HTML  
-- CSS  
-- Chrome Extension APIs  
-
-## 📌 Notes
-
-- Best used alongside general browser safety practices  
-- Some Discord invites may be flagged depending on settings  
-- Keep the extension updated for best protection  
-
-## 📄 License
-
-MIT License
+## Status
+This is the official project website for Discord Link Protector. Updates and improvements may be added over time.
