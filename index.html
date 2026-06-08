@@ -1,52 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DLP - Discord Link Protector</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Discord Link Protector</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      background: #111827;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background: #3b82f6;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="sidebar">
-    <div class="logo">🛡 DLP</div>
+<header>
+  <div class="logo">Discord Link Protector</div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#docs">Docs</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
 
-    <a href="#">🏠 Dashboard</a>
-    <a href="#features">⚡ Features</a>
-    <a href="#how">📘 How It Works</a>
-    <a href="#support">💬 Support</a>
+<div class="hero">
+  <h1>Protect Your Discord Server</h1>
+  <p>Stop malicious links, scams, and spam instantly.</p>
+
+  <a class="btn" href="#features">Get Started</a>
 </div>
 
-<div class="main">
+<section id="features">
+  <h2>Features</h2>
+  <p>✔ Anti-scam protection</p>
+  <p>✔ Auto moderation</p>
+  <p>✔ Custom filters</p>
+</section>
 
-    <div class="topbar">
-        <h2>Discord Link Protector</h2>
-        <button>Get Started</button>
-    </div>
+<section id="docs">
+  <h2>How it works</h2>
+  <p>Invite the bot → Set permissions → Enable protection</p>
+</section>
 
-    <div class="hero">
-        <h1>Stop Malicious Discord Links Instantly</h1>
-        <p>Detect phishing, scams, and unsafe redirects in real time before users click them.</p>
-    </div>
+<section id="support">
+  <h2>Support</h2>
+  <p>Join our Discord or contact support.</p>
+</section>
 
-    <div id="features" class="grid">
-        <div class="card">
-            <h3>🔍 Real-Time Scanning</h3>
-            <p>Instantly detects suspicious links before they are clicked.</p>
-        </div>
-
-        <div class="card">
-            <h3>🛡 Anti-Phishing</h3>
-            <p>Blocks fake login pages and scam redirects automatically.</p>
-        </div>
-
-        <div class="card">
-            <h3>⚙ Easy Setup</h3>
-            <p>Works with Discord bots and servers in minutes.</p>
-        </div>
-    </div>
-
-</div>
+<footer>
+  © 2026 Discord Link Protector
+</footer>
 
 </body>
 </html>
